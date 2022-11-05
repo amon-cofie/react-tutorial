@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:root {
+  --borders: calc(0.5 * 100px);
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.4;
@@ -30,7 +34,7 @@ body {
   width: 100%;
   margin-bottom: 20px;
   display: flex;
-  border-radius: calc(0.5 * 100px);
+  border-radius: var(--borders);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
   justify-content: space-evenly;
 }
@@ -41,7 +45,7 @@ body {
   width: 85%;
   padding-right: 5px;
   padding-left: 10px;
-  border-radius: calc(0.5 * 100px);
+  border-radius: var(--borders);
 }
 
 .input-text::placeholder {
